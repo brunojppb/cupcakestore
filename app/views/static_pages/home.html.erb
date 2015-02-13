@@ -1,43 +1,120 @@
 <div class="carousel slide" id="myCarousel">
 
-			<!-- Carousel indicators -->
-			<ol class="carousel-indicators">
-				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-				<li data-slide-to="1" data-target="#myCarousel"></li>
-				<li data-slide-to="2" data-target="#myCarousel"></li>
-			</ol>
+	<!-- Carousel indicators -->
+	<ol class="carousel-indicators">
+		<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+		<li data-slide-to="1" data-target="#myCarousel"></li>
+		<li data-slide-to="2" data-target="#myCarousel"></li>
+	</ol>
 
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
 
-				<div class="item active" id="slide1">
-					<div class="carousel-caption">
-						<h4>Cupcakery PB</h4>
-						<p>treinando para fazer meu site.</p>
-					</div> <!-- end carousel-caption -->
-				</div> <!-- end slide1-->
+		<div class="item active" id="slide1">
+			<div class="carousel-caption">
+				<h4>Cupcakery PB</h4>
+				<p>O melhor Cupcake você encontra aqui!.</p>
+			</div> <!-- end carousel-caption -->
+		</div> <!-- end slide1-->
 
-				<div class="item" id="slide2">
-					<div class="carousel-caption">
-						<h4>Learn much more here!</h4>
-						<p>Learn how to do it!</p>
-					</div> <!-- end carousel-caption -->
-				</div> <!-- end slide2-->
+		<div class="item" id="slide2">
+			<div class="carousel-caption">
+				<h4>Deliciosos Sabores</h4>
+				<p>Compre agora mesmo pelo nosso site!</p>
+			</div> <!-- end carousel-caption -->
+		</div> <!-- end slide2-->
 
-				<div class="item" id="slide3">
-					<div class="carousel-caption">
-						<h4>Web development with me!</h4>
-						<p>Send me a msg!</p>
-					</div> <!-- end carousel-caption -->
-				</div> <!-- end slide3-->
-			</div> <!-- end carousel-inner -->
+		<div class="item" id="slide3">
+			<div class="carousel-caption">
+				<h4>A Entrega é por conta da casa!</h4>
+				<p>Iremos ate você</p>
+			</div> <!-- end carousel-caption -->
+		</div> <!-- end slide3-->
+	</div> <!-- end carousel-inner -->
 
-			<!-- Carousel controls -->
-			<a class="left carousel-control" data-slide="prev" href="#myCarousel">
-				<span class="icon-prev"></span>
-			</a>
-			<a class="right carousel-control" data-slide="next" href="#myCarousel">
-				<span class="icon-next"></span>
-			</a>
-			
-		</div> <!-- End Carousel -->
+	<!-- Carousel controls -->
+	<a class="left carousel-control" data-slide="prev" href="#myCarousel">
+		<span class="icon-prev"></span>
+	</a>
+	<a class="right carousel-control" data-slide="next" href="#myCarousel">
+		<span class="icon-next"></span>
+	</a>
+
+</div> <!-- End Carousel -->
+
+<div class="row" id="home-products">
+
+	<div class="col-sm-4 feature">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title product-title">Cupcake de Morango</h3>
+			</div>
+			<div class="panel-body">
+				<%= image_tag 'cupcake.jpg', class: "img-circle" %>
+				<p>Cupcake de chocolate com recheio cremoso de baileys, cobertura de ganache de chocolate meio amargo belga e decorado com flocos de chocolate belga.</p>
+
+				<a href="#" target="_blank" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+				<div class="label label-info price">
+					<span class="glyphicon glyphicon-tag"></span>
+					<sub>R$</sub> 4,50
+				</div>
+			</div>
+		</div> <!-- end panel -->
+	</div> <!-- end col-sm-4 -->
+
+	<div class="col-sm-4 feature">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title product-title">Cupcake de Chocolate</h3>
+			</div>
+			<div class="panel-body">
+				<%= image_tag 'cupcake_02.jpg', class: "img-circle" %>
+				<p>Cupcake de chocolate com recheio cremoso de baileys, cobertura de ganache de chocolate meio amargo belga e decorado com flocos de chocolate belga.</p>
+				<a href="#" target="_blank" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+				<div class="label label-info price">
+					<span class="glyphicon glyphicon-tag"></span>
+					<sub>R$</sub> 3,50
+				</div>
+			</div>
+		</div> <!-- end panel -->
+	</div> <!-- end col-sm-4 -->
+
+	<div class="col-sm-4 feature">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title product-title">Cupcake de Vanilla</h3>
+			</div>
+			<div class="panel-body">
+				<%= image_tag 'cupcake_03.jpg', class: "img-circle" %>
+				<p>Cupcake de chocolate com recheio cremoso de baileys, cobertura de ganache de chocolate meio amargo belga e decorado com flocos de chocolate belga.</p>
+				<a href="#" target="_blank" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+				<div class="label label-info price">
+					<span class="glyphicon glyphicon-tag"></span>
+					<sub>R$</sub> 4,00
+				</div>
+			</div>
+		</div> <!-- end panel -->
+	</div> <!-- end col-sm-4 -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
