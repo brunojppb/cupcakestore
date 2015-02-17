@@ -18,10 +18,13 @@ module Cupcakes
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.enforce_available_locales = false
+    config.i18n.available_locales = [:en, :pt]
+    config.i18n.default_locale = :pt
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    # includes custom fonts (glyphicons in my case)
     config.assets.paths << "#{Rails}/vendor/assets/fonts"
   end
 end
