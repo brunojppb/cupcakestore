@@ -1,6 +1,22 @@
 pt:
+<<<<<<< HEAD
   flash:
     welcome: "Bem vindo a Cupcake Store!"
+=======
+  #Messages
+  flash:
+    welcome: "Bem vindo a Cupcake Store!"
+    invalid-email-password-combination: "Email ou senha invalidos"
+  #Global names
+  email: "Email"
+  password: "Senha"
+  login: "Log in"
+  logout: "Sair"
+  signup: "Cadastrar"
+  profile: "Meu Perfil"
+  cart: "Meu Carrinho"
+  #ActiveRecord Models
+>>>>>>> user-login
   activerecord:
     model:
       user: "Usuario"
