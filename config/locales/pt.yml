@@ -1,0 +1,47 @@
+pt:
+  #Messages
+  flash:
+    welcome: "Bem vindo a Cupcake Store!"
+    invalid-email-password-combination: "Email ou senha invalidos"
+  #Global names
+  email: "Email"
+  password: "Senha"
+  login: "Log in"
+  logout: "Sair"
+  signup: "Cadastrar"
+  profile: "Meu Perfil"
+  cart: "Meu Carrinho"
+  #ActiveRecord Models
+  activerecord:
+    model:
+      user: "Usuario"
+    attributes:
+      user:
+        first_name: "Nome"
+        last_name: "Sobrenome"
+        phone_number: "Fone"
+        email: "Email"
+        password: "Senha"
+        password_confirmation: "Confirmar Senha"
+    errors:
+      models:
+        user:
+          attributes:
+            first_name:
+              blank: "precisa ser preenchido."
+              too_long: "só pode ter no maximo 50 caracteres."
+            last_name:
+              blank: "precisa ser preenchido."
+              too_long: "só pode ter no maximo 50 caracteres."
+            email:
+              blank: "precisa ser preenchido."
+              too_long: "só pode ter no maximo 255 caracteres."
+              invalid: "invalido. (Exemplo de email valido: exemplo@exemplo.com.br)."
+            phone_number:
+              blank: "precisa ser preenchido."
+              invalid: "Invalido. (Exemplo de fone valido: 83-1111-1111)."
+            password:
+              blank: "precisa ser preenchida."
+              too_short: "Invalida. (minimo de 6 caracteres)"
+            password_confirmation:
+              confirmation: "Confirme sua senha"
