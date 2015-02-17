@@ -12,6 +12,21 @@ class ApplicationController < ActionController::Base
     end
 =======
 
+  before_action :set_locale
+
   include SessionsHelper
+<<<<<<< HEAD
+>>>>>>> user-login
+=======
+
+
+  private
+    def set_locale
+      if logged_in?
+        I18n.default_locale = current_user.language
+      else
+        I18n.default_locale = :pt
+      end
+    end
 >>>>>>> user-login
 end

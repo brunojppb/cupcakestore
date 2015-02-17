@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Files in the config/locales directory are used for internationalization
 # and are automatically loaded by Rails. If you want to use locales other
 # than English, add the necessary files in this directory.
@@ -21,3 +22,53 @@
 en:
   flash:
     info: "Welcome to Cupcake Store"
+=======
+en:
+  #Messages
+  flash:
+    welcome: "Welcome to Cupcake Store!"
+    invalid-email-password-combination: "Invalid Email/Password combination"
+  #Global names
+  email: "Email"
+  password: "Senha"
+  login: "Log in"
+  logout: "logout"
+  signup: "Signup"
+  profile: "My Profile"
+  cart: "My Cart"
+  contact: "Contact Us"
+  #ActiveRecord Models
+  activerecord:
+    model:
+      user: "User"
+    attributes:
+      user:
+        first_name: "First Name"
+        last_name: "Last Name"
+        phone_number: "Phone"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+    errors:
+      models:
+        user:
+          attributes:
+            first_name:
+              blank: "precisa ser preenchido."
+              too_long: "só pode ter no maximo 50 caracteres."
+            last_name:
+              blank: "precisa ser preenchido."
+              too_long: "só pode ter no maximo 50 caracteres."
+            email:
+              blank: "precisa ser preenchido."
+              too_long: "só pode ter no maximo 255 caracteres."
+              invalid: "invalido. (Exemplo de email valido: exemplo@exemplo.com.br)."
+            phone_number:
+              blank: "precisa ser preenchido."
+              invalid: "Invalido. (Exemplo de fone valido: 83-1111-1111)."
+            password:
+              blank: "precisa ser preenchida."
+              too_short: "Invalida. (minimo de 6 caracteres)"
+            password_confirmation:
+              confirmation: "Confirme sua senha"
+>>>>>>> user-login
