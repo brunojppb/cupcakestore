@@ -11,6 +11,7 @@ pt:
   signup: "Cadastrar"
   profile: "Meu Perfil"
   cart: "Meu Carrinho"
+  contact: "Contato"
   #ActiveRecord Models
   activerecord:
     model:
