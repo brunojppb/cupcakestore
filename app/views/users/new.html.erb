@@ -1,0 +1,61 @@
+<% provide(:title, "registrar") %>
+
+<div class="container first-container">
+
+	<%= render 'shared/error_messages' %>
+
+	<div class="row">
+		<div class="col-sm-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+			
+            <div class="well bs-component">
+              <%= form_for(@user, html: { class: 'form-horizontal' }) do |f| %>
+                <fieldset>
+                  <legend>Faça seu cadastro</legend>
+                  <div class="form-group">
+                  	<%= f.label :first_name, class: 'col-lg-2 control-label'%>
+                    <div class="col-lg-10">
+                    	<%= f.text_field :first_name, class: 'form-control'%>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                  	<%= f.label :last_name, class: 'col-lg-2 control-label'%>
+                    <div class="col-lg-10">
+                    	<%= f.text_field :last_name, class: 'form-control'%>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                  	<%= f.label :email, class: 'col-lg-2 control-label'%>
+                    <div class="col-lg-10">
+                    	<%= f.text_field :email, class: 'form-control'%>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                  	<%= f.label :phone_number, class: 'col-lg-2 control-label'%>
+                    <div class="col-lg-10">
+                    	<%= f.text_field :phone_number, class: 'form-control'%>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                  	<%= f.label :password, class: 'col-lg-2 control-label' %>
+                    <div class="col-lg-10">
+                    	<%= f.password_field :password, class: 'form-control' %>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                  	<%= f.label :password_confirmation, class: 'col-lg-2 control-label'%>
+                    <div class="col-lg-10">
+                    	<%= f.password_field :password_confirmation, class: 'form-control'%>
+                    </div>
+                  </div>                  
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <%= f.submit "Cadastrar", class: "btn btn-primary" %>
+                    </div>
+                  </div>
+                </fieldset>
+              <% end %>
+            <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div></div>
+          
+		</div>
+	</div>
+</div>

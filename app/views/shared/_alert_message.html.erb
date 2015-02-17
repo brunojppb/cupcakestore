@@ -1,0 +1,9 @@
+<div class="container">
+	<% flash.each do |msg_type, msg| %>
+
+		<div class="first-container alert alert-<%=msg_type%>">
+			<%= msg %>
+		</div>
+
+	<% end %>
+</div>
