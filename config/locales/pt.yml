@@ -1,8 +1,4 @@
 pt:
-<<<<<<< HEAD
-  flash:
-    welcome: "Bem vindo a Cupcake Store!"
-=======
   #Messages
   flash:
     welcome: "Bem vindo a Cupcake Store!"
@@ -17,7 +13,6 @@ pt:
   cart: "Meu Carrinho"
   contact: "Contato"
   #ActiveRecord Models
->>>>>>> user-login
   activerecord:
     model:
       user: "Usuario"
