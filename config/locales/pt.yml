@@ -12,6 +12,7 @@ pt:
   profile: "Meu Perfil"
   cart: "Meu Carrinho"
   contact: "Contato"
+  remember_me: "Lembrar"
   #ActiveRecord Models
   activerecord:
     model:

@@ -23,6 +23,8 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     delete logout_path
     assert_not is_logged_in?
     assert_redirected_to root_url
+    #simulate a user clicking logout ins a second window (like other browser)
+    delete logout_path
     follow_redirect!
     assert_select "a[href=?]", logout_path,       count: 0
     assert_select "a[href=?]", user_path(@user),  count: 0
@@ -39,4 +41,33 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert flash.empty?
   end
 
+  test 'login with remembering' do
+    log_in_as(@user, remember_me: '1')
+    #inside tests, cookies does not accept symbols as keys
+    #just strings
+    assert_not_nil cookies['remember_token']
+  end
+
+  test 'login without remembering' do
+    log_in_as(@user, remember_me: '0')
+    #inside tests, cookies does not accept symbols as keys
+    #just strings
+    assert_nil cookies['remember_token']
+  end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -25,13 +25,14 @@ en:
     invalid-email-password-combination: "Invalid Email/Password combination"
   #Global names
   email: "Email"
-  password: "Senha"
+  password: "Password"
   login: "Log in"
   logout: "logout"
   signup: "Signup"
   profile: "My Profile"
   cart: "My Cart"
   contact: "Contact Us"
+  remember_me: "Remember me"
   #ActiveRecord Models
   activerecord:
     model:

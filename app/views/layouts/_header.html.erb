@@ -17,7 +17,9 @@
               <%end%>
           </li>
           <li><a href="#">Cupcakes</a></li>
-          <li><%= link_to t('signup'), signup_path %></li>
+          <% if !logged_in? %>
+            <li><%= link_to t('signup'), signup_path %></li>
+          <% end %>
           <li><a href="#"><%= t('contact') %></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">

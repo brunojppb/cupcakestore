@@ -9,7 +9,13 @@
       
       <li><%= f.email_field :email, class: 'form-control', placeholder: 'Email', style: 'margin-bottom: 5px;' %></li>
 
-      <li><%= f.password_field :password, class: 'form-control', placeholder: 'Senha' %></li>
+      <li><%= f.password_field :password, class: 'form-control', placeholder: t('password') %></li>
+
+      <li>
+        <%= f.check_box :remember_me%>
+        <span><%= t('remember_me') %></span>
+      </li>
+
       <li style="padding-top: 5px;">
         <%= f.submit t('login'), class: 'btn btn-primary btn-block' %>
       </li>
