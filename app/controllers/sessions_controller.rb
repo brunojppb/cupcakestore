@@ -12,7 +12,10 @@ class SessionsController < ApplicationController
       #using SessionsHelper module
       log_in user
       params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-      redirect_to user
+      #if the user tried to access some page that he did not have permission
+      #because he was not logged in, he will be redirected to the last URL
+      #if he has the permissions 
+      redirect_back_or user
     else
       #create a error message
       #using flash.now the error messages disappear as soon as there is

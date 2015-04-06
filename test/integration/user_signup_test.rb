@@ -21,7 +21,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
       post_via_redirect users_path, user: { first_name:              "first name",
                                             last_name:              "last name",
                                             email:                  "firstname@gmail.com",
-                                            phone_number:           "83-3233-6935",
+                                            phone_number:           "8332336935",
                                             password:               "foobar",
                                             password_confirmation:  "foobar" }
     end

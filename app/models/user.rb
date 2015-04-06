@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   validates :first_name, presence: true, length: { maximum: 50}
   validates :last_name, presence: true, length: { maximum: 50}
 
-  VALID_PHONE_NUMBER_REGEX = /[1-9]{1}[0-8]{1}+-[1-9]{1}[0-9]{3}+-[1-9]{1}[0-9]{3}/
+  VALID_PHONE_NUMBER_REGEX = /[1-9]{1}[0-8]{1}[1-9]{1}[0-9]{3}[1-9]{1}[0-9]{3}/
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   validates :email, presence: true, length: { maximum: 255 }, 
@@ -16,7 +16,9 @@ class User < ActiveRecord::Base
 
   validates :phone_number, presence: true, format: { with: VALID_PHONE_NUMBER_REGEX }
 
-  validates :password, length: { minimum: 6 }
+  # has_secure_password enforces the presence of the password upon create
+  # but when the user is editing the profile, he can left the same password
+  validates :password, length: { minimum: 6 }, allow_blank: true
 
   has_secure_password
 
@@ -43,7 +45,7 @@ class User < ActiveRecord::Base
   end
 
   def User.new_token
-    SecureRandom.hex
+    SecureRandom.urlsafe_base64
   end
 
 

@@ -4,5 +4,12 @@ bruno:
   first_name: Bruno
   last_name: Paulino
   email: bruno@gmail.com
-  phone_number: 83-1111-1111
+  phone_number: 8311111111
+  password_digest: <%= User.digest('password') %>
+
+rha:
+  first_name: Rhaisa
+  last_name: Louise
+  email: rha@gmail.com
+  phone_number: 8311111111
   password_digest: <%= User.digest('password') %>

@@ -33,6 +33,10 @@ en:
   cart: "My Cart"
   contact: "Contact Us"
   remember_me: "Remember me"
+  my_profile: "My Profile"
+  edit: "Edit"
+  profile_update_success: "Your profile was updated"
+  please_log_in: "Please, Log in."
   #ActiveRecord Models
   activerecord:
     model:
@@ -50,20 +54,20 @@ en:
         user:
           attributes:
             first_name:
-              blank: "precisa ser preenchido."
-              too_long: "só pode ter no maximo 50 caracteres."
+              blank: "can't be blank."
+              too_long: "maximum 50 charecters."
             last_name:
-              blank: "precisa ser preenchido."
-              too_long: "só pode ter no maximo 50 caracteres."
+              blank: "can't be blank."
+              too_long: "maximum 50 charecters."
             email:
-              blank: "precisa ser preenchido."
-              too_long: "só pode ter no maximo 255 caracteres."
-              invalid: "invalido. (Exemplo de email valido: exemplo@exemplo.com.br)."
+              blank: "can't be blank."
+              too_long: "maximum 255 charecters."
+              invalid: "invalid. (valid example: valid@company.com)."
             phone_number:
-              blank: "precisa ser preenchido."
-              invalid: "Invalido. (Exemplo de fone valido: 83-1111-1111)."
+              blank: "can't be blank."
+              invalid: "invalid. (valid example: 3214443333).."
             password:
-              blank: "precisa ser preenchida."
-              too_short: "Invalida. (minimo de 6 caracteres)"
+              blank: "can't be blank."
+              too_short: "Invalid. (at least 6 charecters)"
             password_confirmation:
-              confirmation: "Confirme sua senha"
+              confirmation: "Needs password confirmation"

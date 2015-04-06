@@ -13,6 +13,10 @@ pt:
   cart: "Meu Carrinho"
   contact: "Contato"
   remember_me: "Lembrar"
+  my_profile: "Meus dados"
+  edit: "Editar"
+  profile_update_success: "Perfil atualizado com sucesso"
+  please_log_in: "Por favor, faça o login"
   #ActiveRecord Models
   activerecord:
     model:

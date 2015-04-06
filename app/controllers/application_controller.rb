@@ -9,11 +9,12 @@ class ApplicationController < ActionController::Base
 
   private
     def set_locale
-      if logged_in?
-        I18n.default_locale = current_user.language
-      else
-        I18n.default_locale = :pt
-      end
+      # if logged_in?
+      #   I18n.default_locale = current_user.language
+      # else
+      #   I18n.default_locale = :en
+      # end
+      I18n.default_locale = :en
     end
     
 end

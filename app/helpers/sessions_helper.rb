@@ -17,6 +17,10 @@ module SessionsHelper
     cookies.delete(:remember_token)
   end
 
+  def current_user?(user)
+    user == current_user
+  end
+
   #Returns the current logged-in user corresponding to the remember token cookie
   def current_user
     #Using sessions
@@ -36,6 +40,7 @@ module SessionsHelper
     !current_user.nil?
   end
 
+  #Remember the user using secured cookies
   def remember(user)
     #Call remember first to save the new remember digest on the database
     #this method also sets the remember_token variable
@@ -44,4 +49,48 @@ module SessionsHelper
     cookies.permanent[:remember_token] = user.remember_token
   end
 
+  #Redirects to stored location (or to the default)
+  def redirect_back_or(default)
+    #redirect the user to the last url that he attepted to access
+    #before his login
+    redirect_to(session[:forwarding_url] || default)
+    #delete the stored URL
+    session.delete(:forwarding_url)
+  end
+
+  def store_location
+    #store the URL if it is a GET request
+    session[:forwarding_url] = request.url if request.get?
+  end
+
+
+
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

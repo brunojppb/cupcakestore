@@ -2,14 +2,19 @@
 	
 	<div class="row">
 		<div class="col-sm-12">
-			<h1 class="user-data-title">Meus Dados</h1>
+			<h1 class="user-data-title"><%= t('my_profile') %></h1>
 		</div>
 	</div>
 	<div class="row">
 		<aside class="col-sm-3 well">
-			<label>Nome: </label> <%=  @user.first_name %> <br />
-			<label>Sobrenome: </label> <%=  @user.last_name %> <br />
-			<label>Email: </label> <%=  @user.email %> <br />
+			<ul style="list-style: none;">
+				<li><label> <%= t('first_name') %>: </label> <%=  current_user.first_name %> <br /></li>
+				<li><label><%= t('last_name') %>: </label> <%=  current_user.last_name %> <br /></li>
+				<li><label><%= t('email') %>: </label> <%=  current_user.email %> <br /></li>
+				<li><label><%= t('phone_number') %>: </label> <%=  current_user.phone_number %> <br /></li>
+				<li class="divider"></li>
+				<li><%= link_to t('edit'), edit_user_path(current_user) %></li>
+			</ul>
 		</aside>
 	</div>
 </div>

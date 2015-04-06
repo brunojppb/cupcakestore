@@ -1,9 +1,17 @@
-# Cupcake Marketplace
+Cupcake Marketplace
+===================
 
-Ruby On Rails app to manage my cupcake online store. 
+Ruby On Rails app to manage a fictitious cupcake online store.
 
-# Main Features:
+Main Features
+=============
 
-  - Online Shopping
+  - User registration
+
+To Do
+=====
+
+  - Online shopping
+  - User Comments
   - Online Payment(Credit and Debit Card)
   - Email Confirmation
