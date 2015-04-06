@@ -1,7 +1,7 @@
 Cupcake Marketplace
 ===================
 
-Ruby On Rails app to manage a fictitious cupcake online store.
+Rails app to manage a fictitious online cupcake store.
 
 Main Features
 =============
