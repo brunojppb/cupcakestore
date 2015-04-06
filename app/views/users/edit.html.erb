@@ -1,4 +1,4 @@
-<% provide(:title, "Editar Dados") %>
+<% provide(:title, "Edit") %>
 
 <div class="container first-container">
 
@@ -9,7 +9,7 @@
 			
             <div class="well bs-component">
               <%= form_for(@user, html: { class: 'form-horizontal' }) do |f| %>
-                <%= render 'user_fields', f: f, form_title: 'Editar dados', button_title: 'Atualizar' %>
+                <%= render 'user_fields', f: f, form_title: 'Edit Profile', button_title: 'Update' %>
               <% end %>
             <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div></div>
           
